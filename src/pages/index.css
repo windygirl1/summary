@@ -1,0 +1,127 @@
+.background {
+  background-color: rgb(59,62,73);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: rgb(228,196,219);
+  user-select: none;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  to {
+    opacity: 3;
+    transform: translateY(0);
+}
+}
+
+.slider {
+  animation: fadeIn 1s ease-in-out;
+  width: 400px;
+  min-height: 600px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  margin: 20px;
+}
+
+@media (max-width: 300px) {
+  .slider {
+    animation: fadeIn 1s ease-in-out;
+    width: 250px;
+    min-height: 600px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 450px) {
+  .slider {
+    animation: fadeIn 1s ease-in-out;
+    width: 300px;
+    min-height: 600px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+}
+
+
+
+.sliderSlide {
+  text-align: center;
+}
+
+@keyframes next {
+  from {
+    transform: translateX(-25%);
+  }
+  to {
+    transform: translateX(0);
+}
+}
+
+.sliderImageNext {
+  animation: next 0.5s ease-in-out;
+}
+
+@keyframes back {
+  from {
+    transform: translateX(25%);
+  }
+  to {
+    transform: translateX(0);
+}
+}
+
+.sliderImageBack {
+  animation: back 0.5s ease-in-out;
+}
+
+
+.button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  background-color: #007A87;
+  color: rgb(253 219 243);
+  cursor: pointer;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 100%;
+  background-color: rgb(59,62,73);
+  display: inline-block;
+}
+
+.dotActive {
+  width: 10px;
+  height: 10px;
+  margin: 5px;
+  border-radius: 100%;
+  background-color: #007A87;
+  display: inline-block;
+}
+
+.text {
+  color: rgb(59,62,73);
+  text-align: center;
+  font-size: 2vh;
+  margin: 3px;
+}
+
+.link {
+  text-decoration: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+}
