@@ -31,6 +31,13 @@ function Start() {
           Готовые проекты
         </button>
         </Link>
+        <a href='https://github.com/windygirl1/summary' className='link'>
+        <button 
+          className='button'
+        >
+          Код резюме
+        </button>
+        </a>
         <div className='container'>
         {showOld &&
         <div className='fade-in'>
